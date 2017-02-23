@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+</div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script>
+
+    /*
+
+     //--------新建延迟对象
+     //新建一个延迟对象
+     def = $.Deferred()
+     //---------修改状态
+     //修改成功状态
+     def.resolve()
+     //修改失败状态
+     def.reject()
+     //通知的方法
+     def.notify()
+     //-----------监听状态改变
+     //
+     def.then(成功的回调,失败的回调,通知的回调)
+     //成功的回调
+     def.doen()
+     //失败的回调
+     def.fail()
+     //进度的回调
+     def.process()
+     //无论成功或失败
+     def.always()
+     //异常的时候
+     def.catch
+
+     //------------when
+     //当def1,def2都完成的时候
+     $.Deferred.when([def1,def2])
+
+
+
+     *
+     * **/
+    //冬瓜炖排骨
+    var def = $.Deferred();
+    //
+    setTimeout(function () {
+        def.resolve('四斤冬瓜终于买好了。。')
+        clearInterval(itr);
+    }, 2000)
+
+    var itr = setInterval(function () {
+        def.notify('买个了小冬瓜,一斤')
+    }, 499)
+
+    def.then(function (msg) {
+        console.log(msg);
+    }, function () {
+    }, function (msg) {
+        console.log(msg)
+    })
+
+    var defPaigu = $.Deferred();
+    //
+    setTimeout(function () {
+        defPaigu.resolve('排骨买好了。。')
+    }, 1000)
+
+    defPaigu.then(function (msg) {
+        console.log(msg);
+    })
+
+
+    $.when(def, defPaigu).done(function (v1, v2) {
+        console.log('开始炖排骨')
+    });
+</script>
+
+
+</body>
+</html>

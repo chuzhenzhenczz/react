@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/examples/async/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/shopping-cart/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/todos/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/tree-view/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/universal/node_modules" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

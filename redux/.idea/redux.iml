@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/01使用简介/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/01使用简介/redux-first/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/01counter-vanilla/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/02counter/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/03todos/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/04todos-with-undo/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/05todomvc/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/06shopping-cart/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/08async/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/07tree-view/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/examples/09universal/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/redux-master/test" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .normal{
+            height: 400px;
+            border:1px solid palegreen;
+        }
+        #comment{
+            height: 100px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="normal">页面的其他正常内容</div>
+<div id="comment"></div>
+<script>
+    var commentContent = `<a onmouseenter="document.write('钓鱼岛是中国的')">点我,有奖</a>`;
+    var commentContent = `<a onmouseenter="window.open('http://baidu.com')">点我,有奖</a>`;
+    var commentContent = `<a onmouseenter="alert(document.cookie)">点我,有奖</a>`;
+    //var commentContent = `(function(){document.write('钓鱼岛是中国的')}())`;
+
+    document.querySelector('#comment').innerHTML =commentContent;
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+
+          闭包:
+            自由变量:函数里面引用的外面定义的变量,叫自由变量。
+
+            闭包的表面理解:
+                当一个函数执行,返回一个函数,这个函数还可以引用这个函数内部的变量。这种
+         情形叫闭包。
+            深层理解:
+                当函数执行完毕,他的的ec被推出调用堆栈。如果有其他变量引用它,他不会被gc回收。所以这造就了闭包。
+
+
+         * */
+       function fn(a,b){
+          var m= 1;
+            var n = function(){
+                console.log('n');
+            }
+
+            var p = function(){
+                console.log(m);
+                n();
+            }
+
+            return p;
+
+       }
+
+        var ret = fn();
+
+        ret();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

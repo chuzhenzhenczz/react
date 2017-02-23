@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    html,body{
+        height:100%;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+
+</div>
+<script >
+
+    document.body.onclick = function(){
+        /**
+         小鸡炖🍄
+
+         * */
+        var moguPromise = new Promise(function(resolve, reject) {
+            // ... some code
+
+            setTimeout(function(){
+                resolve('蘑菇买好了')
+            },1000)
+           /* setTimeout(function(){
+               reject(`卖🍄的时候,钱丢了`)
+                //reject('钱丢了')
+            },2000)*/
+
+        });
+
+
+
+        /*promise.then(function(msg){
+            console.log(msg);
+        },function(msg){
+            console.log(msg);
+        },function(msg){
+            console.log(msg);
+        })*/
+
+        /*
+        //03.all
+        var pro = Promise.all([moguPromise,chickPromise]);
+
+        pro.then(function(msg){
+            console.log(msg);
+        })*/
+
+       var res =  moguPromise.then(function(msg){
+            console.log(msg);
+           return msg;
+        },function(msg){
+            console.log(msg);
+        },function(msg){
+            console.log(msg);
+        })
+
+        console.log(res);
+        res.then(function(msg){
+
+            var chickPromise = new Promise(function(resolve, reject) {
+                // ... some code
+                setTimeout(function(){
+                    resolve('小鸡买好了。。')
+                },2000)
+                /* setTimeout(function(){
+                 reject(`卖🍄的时候,钱丢了`)
+                 //reject('钱丢了')
+                 },2000)*/
+
+            });
+
+            return chickPromise;
+        }).then(function(msg){
+            console.log(msg);
+        })
+
+    }
+</script>
+
+</body>
+</html>

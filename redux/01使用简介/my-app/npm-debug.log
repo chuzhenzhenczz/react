@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--save-exact',
+1 verbose cli   'react-scripts' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-scripts
+8 silly fetchNamedPackageData react-scripts
+9 silly mapToRegistry name react-scripts
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react-scripts',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react-scripts',
+12 silly mapToRegistry   name: 'react-scripts',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/react-scripts
+14 verbose request uri https://registry.npmjs.org/react-scripts
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 07:00:10
+17 verbose request id 51a1da7af71da15a
+18 http request GET https://registry.npmjs.org/react-scripts
+19 http 200 https://registry.npmjs.org/react-scripts
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"8Z8LL6XZ63UPOC4G4AMDAB2DD"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '13275',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Mon, 31 Oct 2016 23:00:07 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-hkg6826-HKG',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1477954806.650363,VS0,VE1003',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"8Z8LL6XZ63UPOC4G4AMDAB2DD"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '13275',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Mon, 31 Oct 2016 23:00:07 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-hkg6826-HKG',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1477954806.650363,VS0,VE1003',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving react-scripts to /Users/qingyun/.npm/registry.npmjs.org/react-scripts/.cache.json
+23 verbose correctMkdir /Users/qingyun/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule react-scripts@0.7.0 checking installable status
+37 silly cache add args [ 'react-scripts', null ]
+38 verbose cache add spec react-scripts
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'react-scripts',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'react-scripts',
+39 silly cache add   name: 'react-scripts',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed react-scripts@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for react-scripts
+42 info addNameTag [ 'react-scripts', 'latest' ]
+43 silly mapToRegistry name react-scripts
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'react-scripts',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'react-scripts',
+46 silly mapToRegistry   name: 'react-scripts',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/react-scripts
+48 verbose addNameTag registry:https://registry.npmjs.org/react-scripts not in flight; fetching
+49 verbose get https://registry.npmjs.org/react-scripts not expired, no request
+50 silly addNameTag next cb for react-scripts with tag latest
+51 silly addNamed react-scripts@0.7.0
+52 verbose addNamed "0.7.0" is a plain semver version for react-scripts
+53 silly mapToRegistry name react-scripts
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'react-scripts',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'react-scripts',
+56 silly mapToRegistry   name: 'react-scripts',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/react-scripts
+58 verbose addRemoteTarball https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz',
+59 verbose addRemoteTarball   'e499ebaf8bb077f7045770eaef1df5cfe308e3e0' ]
+60 info retry fetch attempt 1 at 07:00:14
+61 info attempt registry request try #1 at 07:00:14
+62 http fetch GET https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+63 http fetch 200 https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+64 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+65 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+66 silly fetchAndShaCheck shasum e499ebaf8bb077f7045770eaef1df5cfe308e3e0
+67 silly rollbackFailedOptional Starting
+68 silly rollbackFailedOptional Finishing
+69 silly runTopLevelLifecycles Starting
+70 silly runTopLevelLifecycles Finishing
+71 silly install printInstalled
+72 verbose stack Error: shasum check failed for /var/folders/5w/jjf368cn31l5txp_n584rjrw0000gn/T/npm-76102-8c02f8c6/registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+72 verbose stack Expected: e499ebaf8bb077f7045770eaef1df5cfe308e3e0
+72 verbose stack Actual:   57253bfc8117c90d1691550a41fc9854a5cb738e
+72 verbose stack From:     https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+72 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:25:8
+72 verbose stack     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:72:7)
+72 verbose stack     at emitNone (events.js:91:20)
+72 verbose stack     at ReadStream.emit (events.js:185:7)
+72 verbose stack     at endReadableNT (_stream_readable.js:975:12)
+72 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+72 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+73 verbose cwd /Users/qingyun/360云盘/青云教纲/react教案/redux/01使用简介/my-app
+74 error Darwin 15.0.0
+75 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save-dev" "--save-exact" "react-scripts"
+76 error node v6.3.1
+77 error npm  v3.10.3
+78 error shasum check failed for /var/folders/5w/jjf368cn31l5txp_n584rjrw0000gn/T/npm-76102-8c02f8c6/registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+78 error Expected: e499ebaf8bb077f7045770eaef1df5cfe308e3e0
+78 error Actual:   57253bfc8117c90d1691550a41fc9854a5cb738e
+78 error From:     https://registry.npmjs.org/react-scripts/-/react-scripts-0.7.0.tgz
+79 error If you need help, you may report this error at:
+79 error     <https://github.com/npm/npm/issues>
+80 verbose exit [ 1, true ]

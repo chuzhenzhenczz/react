@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //闭包的例子
+        var fns=[];
+
+        for(var i=0;i<5;i++){
+            fns[i] = function(){
+                console.log(i);
+            }
+        }
+
+        fns[0]()
+
+        fns[111]()
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+         a,b参数变量
+         p,q是var定义的
+         m:函数声明:FD
+
+         他们都会变量提升。(variable hoist);
+         除了函数声明,其他类型的变量,只是定义上浮了。
+
+         ec(执行上下文):
+            课可以看做一个对象{}的格式(调试里面的scope),里面存储着函数里面定义的所有变量)
+
+
+         gc:垃圾回收器
+            系统会隔一段时间,或者当内存占用过大的时候,去遍历一下所有的变量。
+            如果发现,没有其他变量引用它,就把他清空,释放内存。
+            (有两种方案决定变量的回收:一种是:引用计数,一种是:。。)
+
+         * */
+       function fn(a,b){
+            m();
+            console.log(q);
+
+           var p=1;
+           var q = function () {
+               console.log('q')
+           }
+
+            function m(){
+                var x = 1;
+                function y(){
+                    console.log('y')
+                }
+                console.log("m");
+            };
+
+            (function n(){
+               console.log("m");
+           },1);
+
+            m();
+
+
+       }
+
+        fn();
+
+        var v1 = 1;
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
